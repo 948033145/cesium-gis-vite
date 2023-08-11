@@ -10,7 +10,7 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false"
   },
   "dependencies": {
-    "anov-gis-sdk": "^1.1.0",
+    "@anov/gis": "^1.2.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {

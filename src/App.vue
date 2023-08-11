@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
-import "anov-gis-sdk/dist/anov-gis-sdk/index.css";
-import ANOVGIS from "anov-gis-sdk/dist/anov-gis-sdk/anov-gis-sdk.js";
+import "@anov/gis/dist/index.css";
+import ANOVGIS from "@anov/gis";
 onMounted(() => {
   window.viewer = new ANOVGIS.Viewer("cesiumContainer", {
     vrButton: false,

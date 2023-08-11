@@ -10,7 +10,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: 'node_modules/anov-gis-sdk/dist/anov-gis-sdk/resources',
+          src: 'node_modules/@anov/gis/dist/resources',
           dest: 'anov-gis-sdk'
         }
       ]
