@@ -1,20 +1,23 @@
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref } from "vue";
 import "@anov/gis/dist/index.css";
 import ANOVGIS from "@anov/gis";
 onMounted(() => {
   window.viewer = new ANOVGIS.Viewer("cesiumContainer", {
+    geocoderType: ANOVGIS.GeocoderType.TIANDITU,
     vrButton: false,
     baseLayerPicker: true,
     fullscreenButton: true,
     homeButton: true,
     sceneModePicker: true,
     navigationHelpButton: true,
+    copyRight: false,
+    showMapInfo: true,
   });
-  ANOVGIS.WidgetsControl.showAllControls({
-    index: 4,
+  viewer.setOptions({
+    showAtmosphere: false,
   });
-})
+});
 </script>
 
 <template>
